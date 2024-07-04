@@ -6,9 +6,9 @@ function AdmissionDetails() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="bg-white p-6 rounded-lg shadow-md w-3/4">
-        <div className="flex justify-between items-center mb-4">
-          <h1 className="text-2xl font-bold">Admission Details</h1>
+      <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-4xl mx-4 md:mx-6 lg:mx-8">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-4">
+          <h1 className="text-2xl font-bold mb-4 md:mb-0">Admission Details</h1>
           <button
             onClick={() => logout({ returnTo: window.location.origin })}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
@@ -28,32 +28,32 @@ function AdmissionDetails() {
           />
         </div>
         
-        <div className="flex justify-around mt-8">
-          <div className="text-center">
+        <div className="flex flex-col md:flex-row justify-around mt-8">
+          <div className="text-center mb-4 md:mb-0">
             <div className="mb-4">
               <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                 New Registration
               </button>
             </div>
-            
+           
           </div>
 
-          <div className="text-center">
+          <div className="text-center mb-4 md:mb-0">
             <div className="mb-4">
               <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                 Main Program
               </button>
             </div>
-            
+           
           </div>
 
-          <div className="text-center">
+          <div className="text-center mb-4 md:mb-0">
             <div className="mb-4">
               <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
                 Data Analysis
               </button>
             </div>
-            
+           
           </div>
         </div>
       </div>
